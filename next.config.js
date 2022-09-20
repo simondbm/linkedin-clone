@@ -1,7 +1,21 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+/**
+ * @format
+ * @type {import('next').NextConfig}
+ */
 
-module.exports = nextConfig
+const nextConfig = {
+  images: {
+    domains: ["lh3.googleusercontent.com", "rb.gy"],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "rb.gy",
+        pathname: "/**",
+      },
+    ],
+  },
+};
+
+module.exports = nextConfig;
