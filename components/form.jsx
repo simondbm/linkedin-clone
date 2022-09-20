@@ -7,7 +7,7 @@ import { useRecoilState } from "recoil";
 import { modalState } from "../atoms/modalAtom";
 import { handlePostState, useSSRPostsState } from "../atoms/postAtom";
 
-export default function form() {
+export default function Form() {
   const { data: session } = useSession();
   const [input, setInput] = useState("");
   const [photoUrl, setPhotoUrl] = useState("");

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export default function backdrop({ children, onClick }) {
+export default function Backdrop({ children, onClick }) {
   return (
     <motion.div
       onClick={onClick}
