@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
-import HeaderLink from "./headerLink";
 import GroupIcon from "@mui/icons-material/Group";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ChatIcon from "@mui/icons-material/Chat";
@@ -13,6 +12,7 @@ import { Avatar } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
+import HeaderLink from "./headerLink";
 
 const spring = {
   type: "spring",

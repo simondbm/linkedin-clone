@@ -1,7 +1,7 @@
 /** @format */
 
 import { motion } from "framer-motion";
-import Backdrop from "./Backdrop";
+import Backdrop from "./backdrop";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import IconButton from "@mui/material/IconButton";
 import { useSession } from "next-auth/react";
