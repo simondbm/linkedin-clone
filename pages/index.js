@@ -2,7 +2,6 @@
 import { useSession } from "next-auth/react";
 import Head from "next/head";
 import { getSession } from "next-auth/react";
-import Image from "next/image";
 import Header from "../components/header";
 import Sidebar from "../components/sidebar";
 import Widgets from "../components/widgets";

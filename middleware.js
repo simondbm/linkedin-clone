@@ -12,7 +12,10 @@ export async function middleware(req) {
     });
     // You could also check for any property on the session object,
     // like role === "admin" or name === "John Doe", etc.
-    if (!session) return NextResponse.redirect("/home");
+    // if (!session) return NextResponse.redirect("/home");
+    const url = req.nextUrl.clone();
+    url.pathname = "/home";
+    if (!session) return NextResponse.rewrite(url);
     // If user is authenticated, continue.
   }
 }

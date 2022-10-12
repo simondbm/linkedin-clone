@@ -1,7 +1,6 @@
 /** @format */
 
 import Image from "next/image";
-import { useSession } from "next-auth/react";
 import ExploreIcon from "@mui/icons-material/Explore";
 import GroupIcon from "@mui/icons-material/Group";
 import OndemandVideoSharpIcon from "@mui/icons-material/OndemandVideoSharp";
@@ -10,7 +9,6 @@ import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRound
 import Head from "next/head";
 import HeaderLink from "../components/headerlink";
 import { getProviders, signIn } from "next-auth/react";
-import { useRouter } from "next/router";
 
 export default function Home({ providers }) {
   console.log(providers);
@@ -22,7 +20,12 @@ export default function Home({ providers }) {
       </Head>
       <header className="flex justify-around items-center py-4">
         <div className=" relative w-36 h-10">
-          <Image src="https://rb.gy/vtbzlp" layout="fill" objectFit="contain" />
+          <Image
+            src="https://rb.gy/vtbzlp"
+            layout="fill"
+            objectFit="contain"
+            alt="logo"
+          />
         </div>
         <div className="flex items-center sm:divide-x divide-gray-300">
           <div className="hidden sm:flex space-x-8 pr-4">
@@ -67,7 +70,12 @@ export default function Home({ providers }) {
         </div>
 
         <div className="relative xl:absolute w-80 h-80 xl:w-[650px] xl:h-[650px] top-14 right-5">
-          <Image src="https://rb.gy/vkzpzt" layout="fill" priority />
+          <Image
+            src="https://rb.gy/vkzpzt"
+            layout="fill"
+            priority
+            alt="image"
+          />
         </div>
       </main>
     </div>
